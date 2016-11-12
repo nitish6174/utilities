@@ -1,0 +1,66 @@
+## Add sudo wherever needed
+
+## list all files in current directory
+alias ll="ls -alh"
+
+## apt shorthands
+alias sau="sudo apt-get update"
+alias sai="sudo apt-get install"
+sar() {
+	sudo apt-get autoremove
+	sudo apt-get autoclean
+}
+
+## In case you frequently edit bashrc
+alias vb="vim ~/.bashrc"
+alias sb="source ~/.bashrc"
+
+## Scan IPs on current network
+alias scanip="nmap -sP -PR 10.0.2.*"
+alias scanips="nmap -sP -PR 10.0.2.* | grep ""'""Nmap scan report for ""'"
+
+## cd to frequently used directories
+alias cdp="cd ~/programming/"
+
+## Proxy switching (Add more commands in each function as needed)
+setnoproxy() {
+	git config --global --unset http.proxy
+	git config --global --unset https.proxy
+}
+setiitgproxy() {
+	git config --global http.proxy http://username:password@proxy:port
+	git config --global https.proxy http://username:password@proxy:port
+}
+
+## Git aliases
+alias gist="git status"
+alias giad="git add ."
+alias gico="git commit -m"
+alias gips="git push"
+alias gipl="git pull"
+
+alias gig1="git graph1"
+alias gig2="git graph2"
+## Add below git aliases in gitconfig file under [alias] section to use the above 2 aliases
+# graph1 = log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(bold white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+# graph2 = log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''%C(bold white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
+## Remote server tasks
+# ssh
+alias sshserver1="ssh -p 22 user@xxx.xxx.xxx.xxx"
+# ssh with a saved password
+alias sshserver2="sshpass -p password ssh -p 22 user@xxx.xxx.xxx.xxx"
+# mount remote directory (make /mnt/remote directory first on local machine)
+alias mountserver="sshfs -o allow_other root@xxx.xxx.xxx.xxx:/path/to/mount /mnt/remote"
+
+## Python virtual environment
+setup_venv() {
+    virtualenv venv
+    source venv/bin/activate
+}
+alias enter_venv="source venv/bin/activate"
+
+## Find lines of code (LOC) in project folder (ignore git, library codes, fonts, images, compiled etc folders & files)
+alias loc_php="find . -type f -name '*' -not -path './.git/*' -not -path './fonts/*' -not -path './*/fonts/*' -not -path './images/*' -not -path './*/images/*' -not -path './_file-manager/*' | xargs wc -l"
+alias loc_flask="find . -type f -name '*' -not -path './.git/*' -not -path './venv/*' -not -path './fonts/*' -not -path './*/fonts/*' -not -path './images/*' -not -path './*/images/*' -not -path './__pycache__/*' -not -path './*/__pycache__/*' -not -path './*.pyc' -not -path './*.wsgi' -not -path './*.json' -not -path './*.sql' | xargs wc -l"
+alias loc_c="find -regextype posix-extended -regex '.*\.(c|cpp|h|md)' | xargs wc -l"

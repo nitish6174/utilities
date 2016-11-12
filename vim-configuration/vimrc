@@ -1,0 +1,129 @@
+" --------------------------------------------------
+" Vundle package manager settings
+" --------------------------------------------------
+set nocompatible
+filetype off
+
+" ---------- Set path of vundle file ----------
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+" ---------- Plugins list start ----------
+
+" -- File explorer --
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+
+" -- Bracket matching --
+"Plugin 'tpope/vim-surround'
+
+" -- Autocompletion --
+Plugin 'mattn/emmet-vim'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'SirVer/ultisnips'
+"Plugin 'davidhalter/jedi-vim'
+
+" -- Line numbers & indentation --
+"Plugin 'Yggdroot/indentLine'
+
+" -- Comments --
+"Plugin 'tomtom/tcomment_vim'
+
+" -- Git support --
+"Plugin 'airblade/vim-gitgutter'
+
+" -- Color scheme --
+Plugin 'flazz/vim-colorschemes'
+
+" -- Language specific syntax and completion --
+" Plugin 'pangloss/vim-javascript'
+
+" -- Other plugins --
+"Plugin 'kien/ctrlp.vim'
+
+" ---------- Plugins list end ----------
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+" ---------- Vundle help ----------
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+
+" --------------------------------------------------
+" Color scheme settings
+" --------------------------------------------------
+syntax enable
+let g:rehash256 = 1
+
+" Below scheme is included in flazz/vim-colorschemes plugin
+"colorscheme Monokai
+" Following colorschemes need to be downloaded from github (username is mentioned):
+colorscheme monokai_crusoexia
+"colorscheme monokai_jaromero
+"colorscheme monokai_sickill
+"colorscheme molokai_tomasr
+" If tomasr/molokai theme is used, uncomment the following line
+"let g:molokai_original = 1
+
+
+
+" --------------------------------------------------
+" Functions
+" --------------------------------------------------
+" Switch between line number mode
+function! NumberToggle()
+	if(&number == 0 && &relativenumber == 0)
+		set number
+		set relativenumber
+	elseif(&relativenumber == 1)
+		set norelativenumber
+		set number
+	else
+		set nonumber
+	endif
+endfunc
+
+
+
+" --------------------------------------------------
+" Settings for runtime initialisation
+" --------------------------------------------------
+set tabstop=4 shiftwidth=4
+call NumberToggle()
+
+
+
+" --------------------------------------------------
+" Keyboard mappings
+" --------------------------------------------------
+" Move line up/down with Ctrl+Shift+Up/Down (just like Sublime Text)
+nnoremap <C-S-Up> :m-2<CR>
+nnoremap <C-S-Down> :m+1<CR>
+" Change width of file explorer/editor area (when both are opened)
+nnoremap <C-S-Left> :vertical resize -1<CR>
+nnoremap <C-S-Right> :vertical resize +1<CR>
+" Toggle line numbers using NumberToggle functions (defined above)
+nnoremap <C-l> :call NumberToggle()<cr>
+" Find
+nnoremap <C-f> /
+inoremap <C-f> <Esc>/
+
+
+" --------------------------------------------------
+" Plugins settings & mappings
+" --------------------------------------------------
+
+" NERDTree
+nnoremap <S-n> :NERDTreeToggle<CR>
