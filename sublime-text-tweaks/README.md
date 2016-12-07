@@ -39,8 +39,8 @@ List of useful Sublime text packages
   - GitGutter
   - DoxyDoxygen
 * **Others** :
+  - Markdown Preview (Preview in browser, view cheat sheet and more)
   - PowerCursors (Multiple cursors with keyboard)
   - Color scheme editor
   - Indent XML
-  - Markdown Preview
   - Package Resource Viewer
