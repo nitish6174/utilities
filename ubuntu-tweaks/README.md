@@ -14,10 +14,12 @@ Ubuntu extensions and themes. Some of these might be available only on Ubuntu Gn
 * **Media player indicator** : Music controller for topbar
 * **Pixel saver** : Brings title bar applications to topbar
 * **Places status indicator** : Quickly open common filesystem places
+* **Switcher** : Switch between windows and launch apps by typing
 * **Proxy switcher** : Switch between network proxy profiles
 * **Todo.txt** : Quick notes and TODO list
 * **User themes** : Shell themes from user directory
 * **Volume mixer** : Control volume of each application
+* **Web search dialog** : Web search from ubuntu
 
 #### Themes
 * Adapta

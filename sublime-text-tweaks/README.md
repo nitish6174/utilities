@@ -28,7 +28,8 @@ List of useful Sublime text packages
   - JSHint
   - Bootstrap 3 snippets
   - CSS3
-  - Syntax highlighting for SASS
+  - Jade, Jinja2
+  - SCSS, Syntax highlighting for SASS
 * **Other syntax** :
   - Python Improved
   - ShellScriptImproved
@@ -39,8 +40,11 @@ List of useful Sublime text packages
   - GitGutter
   - DoxyDoxygen
 * **Others** :
+  - AlignTab (Align multiple code lines by specified character)
   - Markdown Preview (Preview in browser, view cheat sheet and more)
   - PowerCursors (Multiple cursors with keyboard)
+  - Advanced CSV
   - Color scheme editor
   - Indent XML
+  - ExportHTML (Take print of code)
   - Package Resource Viewer
