@@ -18,33 +18,42 @@ List of useful Sublime text packages
   - AutoFileName
   - Emmet
   - SublimeCodeIntel
-* **C++** :
+* **C/C++** :
   - C improved
   - C++ 11
   - C++ Starting Kit
+* **Python** :
+  - Anaconda (Python linting and more)
+  - Python Breakpoints
+  - Python Improved
+  - Virtualenv
 * **Web development** :
-  - Javascript completions
-  - jQuery
-  - JSHint
   - Bootstrap 3 snippets
   - CSS3
-  - Jade, Jinja2
-  - SCSS, Syntax highlighting for SASS
-* **Other syntax** :
-  - Python Improved
-  - ShellScriptImproved
-  - Dotfiles Syntax Highlighting
-  - ApacheConf.tmLanguage
+  - Jade
+  - Javascript completions
   - Jinja2 (Flask/Django etc)
+  - jQuery
+  - JSHint
+  - SCSS
+  - Syntax highlighting for SASS
+* **Other syntax** :
+  - ApacheConf.tmLanguage
+  - Dockerfile Syntax Highlighting
+  - Dotfiles Syntax Highlighting
+  - MarkdownHighlighting
+  - ShellScriptImproved
 * **Software control** :
-  - GitGutter
+  - DiffView
   - DoxyDoxygen
+  - GitGutter
 * **Others** :
-  - AlignTab (Align multiple code lines by specified character)
-  - Markdown Preview (Preview in browser, view cheat sheet and more)
-  - PowerCursors (Multiple cursors with keyboard)
   - Advanced CSV
+  - AlignTab (Align multiple code lines by specified character)
   - Color scheme editor
-  - Indent XML
   - ExportHTML (Take print of code)
+  - Indent XML
+  - Markdown Preview (Preview in browser, view cheat sheet and more)
   - Package Resource Viewer
+  - PowerCursors (Multiple cursors with keyboard)
+  - SublimeLinter

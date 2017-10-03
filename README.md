@@ -3,6 +3,7 @@
 Automation, setup and other useful scripts along with system tweaks.
 Some tweaks might only be applicable to Ubuntu.
 
+
 ## Contents
 * **Bash configuration** : bashrc file having some aliases and functions
 * **Filename modifier** : Scripts to rename video playlist/series files in a consistent format
@@ -11,8 +12,16 @@ Some tweaks might only be applicable to Ubuntu.
 * **Sublime Text Tweaks** : Packages and themes for Sublime Text editor
 * **Ubuntu Tweaks** : Extensions and themes for Ubuntu
 * **Vim configuration** : Some plugins, color scheme and keyboard mappings to improve vim
-  
+
+
 ## Extra
+
+#### Changing extension name of files
+Run command in below format in terminal :  
+```
+rename "s/<old extension>/<new extension>/" *.<old extension>
+```  
+Example : ```rename "s/css/scss/" *.css``` will rename all .css files to .scss
 
 #### Settings to control mouse cursor using keyboard
 1. Open 'Settings' -> 'Universal Access' -> 'Pointing and clicking' -> 'Mouse keys'
@@ -35,7 +44,6 @@ Some tweaks might only be applicable to Ubuntu.
   - default (large-size)
   - printer (print optimized)
   - prepress (prepress optimized)
-
 
 #### Compress images
 * JPG/JPEG :  
