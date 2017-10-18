@@ -84,15 +84,15 @@ colorscheme monokai_crusoexia
 " --------------------------------------------------
 " Switch between line number mode
 function! NumberToggle()
-	if(&number == 0 && &relativenumber == 0)
-		set number
-		set relativenumber
-	elseif(&relativenumber == 1)
-		set norelativenumber
-		set number
-	else
-		set nonumber
-	endif
+    if(&number == 0 && &relativenumber == 0)
+        set number
+        set relativenumber
+    elseif(&relativenumber == 1)
+        set norelativenumber
+        set number
+    else
+        set nonumber
+    endif
 endfunc
 
 

@@ -7,8 +7,8 @@ alias ll="ls -alh"
 alias sau="sudo apt-get update"
 alias sai="sudo apt-get install"
 sar() {
-	sudo apt-get autoremove
-	sudo apt-get autoclean
+    sudo apt-get autoremove
+    sudo apt-get autoclean
 }
 
 ## In case you frequently edit bashrc
@@ -24,12 +24,12 @@ alias cdp="cd ~/programming/"
 
 ## Proxy switching (Add more commands in each function as needed)
 setnoproxy() {
-	git config --global --unset http.proxy
-	git config --global --unset https.proxy
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy
 }
 setiitgproxy() {
-	git config --global http.proxy http://username:password@proxy:port
-	git config --global https.proxy http://username:password@proxy:port
+    git config --global http.proxy http://username:password@proxy:port
+    git config --global https.proxy http://username:password@proxy:port
 }
 
 ## Git aliases
