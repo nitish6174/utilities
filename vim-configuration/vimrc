@@ -65,12 +65,14 @@ filetype plugin indent on
 " Color scheme settings
 " --------------------------------------------------
 syntax enable
-let g:rehash256 = 1
+let g:rehash256 = 1 
 
-" Below scheme is included in flazz/vim-colorschemes plugin
+" Below schemes are included in flazz/vim-colorschemes plugin
 "colorscheme Monokai
+colorscheme molokai
+
 " Following colorschemes need to be downloaded from github (username is mentioned):
-colorscheme monokai_crusoexia
+"colorscheme monokai_crusoexia
 "colorscheme monokai_jaromero
 "colorscheme monokai_sickill
 "colorscheme molokai_tomasr
