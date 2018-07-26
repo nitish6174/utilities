@@ -4,8 +4,8 @@
 
 ```
 [alias]  
-    graph1 = log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(bold white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-    graph2 = log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''%C(bold white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    graph1 = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) - %C(green)(%ar)%C(reset) %C(bold white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    graph2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''%C(bold white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 ```
 
 2. Now run ```git graph1``` or ```git graph2``` in your project folder.  
